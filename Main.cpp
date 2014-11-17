@@ -30,21 +30,21 @@ int main()
 	else if (oper == '-') {
 			sum = num1 - num2;
 			cout << sum << endl;
-		}
+	}
 	else if (oper == '/') {
-				sum = num1 / num2;
-				cout << sum << endl;
-				}
+			sum = num1 / num2;
+			cout << sum << endl;
+	}
 
 	else if (oper == '*') {
-						sum = num1 * num2;
-						cout << sum << endl;
+			sum = num1 * num2;
+			cout << sum << endl;
 
-						}
+	}
 
 	else {
-							cout << "Error!" << endl;
-						}
+			cout << "Error!" << endl;
+	}
 
 
 
