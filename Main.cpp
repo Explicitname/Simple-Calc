@@ -8,6 +8,29 @@
 #include <iostream>
 using namespace std;
 
+// Defining Arithmetic Functions
+
+float add (float num1, float num2)
+	{
+		return num1 + num2;
+	}
+
+float sub (float num1, float num2)
+	{
+		return num1 - num2;
+	}
+
+float mul (float num1, float num2)
+	{
+		return num1 * num2;
+	}
+
+float div (float num1, float num2)
+	{
+		return num1 / num2;
+	}
+
+
 int main()
 
 {
@@ -18,6 +41,7 @@ int main()
 	char oper;
 	char cont = 'y';
 
+
 // Flow Control - Continues until variable cont is not equal to 'y'
 	do {
 		cout << "Josh's Simple Calculator" << endl;
@@ -26,33 +50,31 @@ int main()
 		cin >> num1 >> oper >> num2;
 
 
-		if (num1 || num2 == char) {
+		if (!num1 || !num2) {
 			cout << "Error! You must use numbers!" << endl;
+			return 0;
 		}
 
-		if (oper == '+') {
-			sum = num1 + num2;
-			cout << sum << endl;
-
+		else if (oper == '+') {
+			sum = add (num1,num2);
+			cout << "The sum is: " << sum << endl;
 		}
 
 		else if (oper == '-') {
-			sum = num1 - num2;
-			cout << sum << endl;
+			sum = sub (num1,num2);
+			cout << "The difference is: " << sum << endl;
 		}
 		else if (oper == '/') {
-			sum = num1 / num2;
-			cout << sum << endl;
+			sum = mul (num1,num2);
+			cout << "The quotient is: " << sum << endl;
 		}
 
 		else if (oper == '*') {
-			sum = num1 * num2;
-			cout << sum << endl;
-
+			sum = div (num1,num2);
+			cout << "The product is: " << sum << endl;
 		}
 
 		else {
-			cout << "Error!" << endl;
 			cont = 'n';
 		}
 		cout << "Would you like to continue? " << endl;
@@ -60,7 +82,7 @@ int main()
 		cin >> cont;
 
 
-	}	while (cont == 'y');
+	}	while (cont == 'y' || cont == 'Y');
 
 
 
