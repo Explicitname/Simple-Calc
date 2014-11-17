@@ -27,22 +27,22 @@ int main()
 
 	}
 
-		else if (oper == '-') {
+	else if (oper == '-') {
 			sum = num1 - num2;
 			cout << sum << endl;
 		}
-				else if (oper == '/') {
+	else if (oper == '/') {
 				sum = num1 / num2;
 				cout << sum << endl;
 				}
 
-						else if (oper == '*') {
+	else if (oper == '*') {
 						sum = num1 * num2;
 						cout << sum << endl;
 
 						}
 
-						else {
+	else {
 							cout << "Error!" << endl;
 						}
 
